@@ -12,19 +12,25 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
+   transition-duration: 0.4s;  
+  cursor: pointer;
 }
 
-.button2 {background-color: #008CBA;} /* Blue */
-.button3 {background-color: #f44336;} /* Red */ 
-.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
-.button5 {background-color: #555555;} /* Black */
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+      .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+      }
 </style>
     <title>I am watching you in your sleep</title>
   </head>
   <body style="background-color:tomato">
     <h1 style="color:powderblue;">Min første gang med html :)</h1>
     <p><img src="meme.jpg"></p>
-    <button class="button">Pointless button</button>
+    <button class="button button1">Pointless button</button>
   </body>
 </html>
