@@ -29,12 +29,38 @@
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
       }
 </style>
+    <script>
+    function myFunction(){
+      var element = document.getElementById("img");
+
+    
+
+     
+      if(element.classList.contains("invert") == true){
+        element.classList.remove("invert");
+      }
+    else{
+      element.classList.add("invert");
+    }
+    }
+    function backgroundColour(){
+      var i = document.getElementById("background");
+      
+     if(i.style["background-color"]=="tomato"){
+       i.style["background-color"]="LightGray";
+     }
+     else {
+         i.style["background-color"] ="tomato";
+     }
+    }
+    
+    </script>
     <title>I am watching you in your sleep</title>
   </head>
-  <body style="background-color:tomato">
+  <body id="background" style="background-color:tomato"> 
     <h1 style="color:powderblue;">Min første gang med html :)</h1>
-    <p><img class="invert" src="meme.jpg" alt="Meme" width="300" height="300"></p>
-    <button onclick="myFunction()" class="button button1">Pointless button</button>
+    <p><img id="img" class="invert" src="meme.jpg" alt="Meme" width="300" height="300"></p>
+    <button onclick="myFunction();backgroundColour()" class="button button1">Pointless button</button>
 
     
   </body>
